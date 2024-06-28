@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>AgeGenius Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="slidingText">
+        <span
+          >Calculate Your Age with AgeGenius, the Smart Age Calculator. Discover
+          your exact age in days, months, and years!</span
+        >
+      </div>
+
+      <div class="errorBox">
+        <span>Please Enter a Valid Date!</span>
+      </div>
+
+      <div class="ageCalculator">
+        <div class="title">
+          <i class="fa-solid fa-calendar-days"></i>
+          <h2>Your Date Of Birth</h2>
+        </div>
+        <div class="dateInputs">
+          <div class="inputBoxes">
+            <div class="box">
+              <input
+                id="birthDay"
+                type="number"
+                placeholder="00"
+                min="0"
+                max="31"
+              />
+              <span>Day</span>
+            </div>
+            <div class="box">
+              <input id="birthMonth" type="number" placeholder="00" min="0" />
+              <span>Month</span>
+            </div>
+            <div class="box">
+              <input id="birthYear" type="number" placeholder="00" min="0" />
+              <span>Year</span>
+            </div>
+          </div>
+        </div>
+        <button class="calculateBtn">Calculate</button>
+        <div class="title">
+          <div class="avatar">
+            <i class="fa-solid fa-person"></i>
+            <i class="fa-solid fa-person"></i>
+            <i class="fa-solid fa-person"></i>
+          </div>
+          <h2>Your Age Till Today</h2>
+        </div>
+        <div class="dateInputs">
+          <div class="inputBoxes">
+            <div class="box">
+              <input
+                id="totalDays"
+                type="number"
+                placeholder="00"
+                min="0"
+                readonly
+              />
+              <span>Day</span>
+            </div>
+            <div class="box">
+              <input
+                id="totalMonths"
+                type="number"
+                placeholder="00"
+                min="0"
+                readonly
+              />
+              <span>Month</span>
+            </div>
+            <div class="box">
+              <input
+                id="totalYears"
+                type="number"
+                placeholder="00"
+                min="0"
+                readonly
+              />
+              <span>Year</span>
+            </div>
+          </div>
+        </div>
+
+        <span class="review"
+          >You're a kid! Enjoy those cartoons and endless energy!</span
+        >
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/5ac6bf8fc0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="calculato.js"></script>
+  </body>
+</html>
